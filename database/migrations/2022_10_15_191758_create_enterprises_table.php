@@ -23,6 +23,10 @@ return new class extends Migration
 
             $table->string('street_number', 10);
 
+            $table->string('discrict');
+
+            $table->string('city');
+
             $table->string('cnpj', 20);
 
             $table->string('ie', 45);

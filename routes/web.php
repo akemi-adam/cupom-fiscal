@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\{
+    EnterpriseController, InstitutionController
+};
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::view('/', 'dashboard')->name('dashboard');
+
+Route::name('enterprise.')->prefix('enterprise')->group(function () {
+    
+    Route::get('/create', [EnterpriseController::class, 'create'])->name('create');
+    
+    Route::post('/', [EnterpriseController::class, 'store'])->name('store');
+
+    Route::get('/', [EnterpriseController::class, 'index'])->name('index');
+
+});
+
+Route::name('institution.')->prefix('institution')->group(function () {
+
+    Route::get('/create', [InstitutionController::class, 'create'])->name('create');
+
+    Route::post('/', [InstitutionController::class, 'store'])->name('store');
+
 });
