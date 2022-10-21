@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.pages')
 
 @section('title', 'Cadastrar empresa')
 

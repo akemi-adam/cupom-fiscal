@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.pages')
 
 @section('title', 'Cadastrar empresa')
 
@@ -27,7 +27,7 @@
             <label for="ie" class="form-label">IE:</label>
             <input type="text" name="ie" class="form-control">
         </div>
-        <button class="btn btn-primary">
+        <button class="btn btn-success">
             Cadastrar
         </button>
     </form>

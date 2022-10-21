@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.pages')
 
 @section('title', 'Registre uma instituição')
 
@@ -7,6 +7,6 @@
         @csrf
         <label for="institution" class="h3">Instituição:</label>
         <input type="text" class="form-control" name="institution">
-        <button class="btn btn-primary mt-3">Enviar</button>
+        <button class="btn btn-success mt-3">Enviar</button>
     </form>
 @endsection
