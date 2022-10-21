@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{
-    EnterpriseController, InstitutionController, ReceiptController
+    EnterpriseController, InstitutionController, ReceiptController, DonationController
 };
 
 /*
@@ -42,4 +42,11 @@ Route::name('receipt.')->prefix('receipt')->group(function () {
 
     Route::post('/', [ReceiptController::class, 'store'])->name('store');
 
+});
+
+Route::name('donation.')->prefix('donation')->group(function ()
+{
+    Route::get('/create', [DonationController::class, 'create'])->name('create');
+
+    Route::post('/', [DonationController::class, 'store'])->name('store');
 });

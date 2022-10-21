@@ -14,8 +14,8 @@
           <li><a href="{{ route('enterprise.create') }}">Cadastrar Empresa</a></li>
           <li><a href="{{ route('enterprise.index') }}">Ver Empresas</a></li>
           <li><a href="{{ route('institution.create') }}">Cadastrar Instituições</a></li>
-          <li><a href="#">Cadastrar Nota Fiscal</a></li>
-          <li><a href="#">Fazer Doação</a></li>
+          <li><a href="{{ route('receipt.create') }}">Cadastrar Nota Fiscal</a></li>
+          <li><a href="{{ route('donation.create') }}">Fazer Doação</a></li>
         </ul>
       </nav>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -58,7 +58,7 @@
           <div class="col-xl-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-card-text"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Cadastrar Nota Fiscal</a></h4>
+              <h4 class="title"><a href="{{ route('receipt.create') }}" class="stretched-link">Cadastrar Nota Fiscal</a></h4>
             </div>
           </div>
           <!--End Icon Box -->
@@ -66,7 +66,7 @@
           <div class="col-xl-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-cash-coin"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Fazer Doação</a></h4>
+              <h4 class="title"><a href="{{ route('donation.create') }}" class="stretched-link">Fazer Doação</a></h4>
             </div>
           </div>
         </div>

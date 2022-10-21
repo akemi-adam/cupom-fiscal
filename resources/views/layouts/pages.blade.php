@@ -46,8 +46,8 @@
                 <li><a href="{{ route('enterprise.create') }}">Cadastrar Empresa</a></li>
                 <li><a href="{{ route('enterprise.index') }}">Ver Empresas</a></li>
                 <li><a href="{{ route('institution.create') }}">Cadastrar Instituições</a></li>
-                <li><a href="#">Cadastrar Nota Fiscal</a></li>
-                <li><a href="#">Fazer Doação</a></li>
+                <li><a href="{{ route('receipt.create') }}">Cadastrar Nota Fiscal</a></li>
+                <li><a href="{{ route('donation.create') }}">Fazer Doação</a></li>
             </ul>
             </nav>
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -107,11 +107,11 @@
                 <h4>Useful Links</h4>
                 <ul>
                 <li><a href="/">Dashboard</a></li>
-                <li><a href="#">Cadastrar Empresas</a></li>
-                <li><a href="#">Ver Empresas</a></li>
-                <li><a href="#">Cadastrar Instituições</a></li>
-                <li><a href="#">Cadastrar Nota Fiscal</a></li>
-                <li><a href="#">Fazer Doação</a></li>
+                <li><a href="{{ route('enterprise.create') }}">Cadastrar Empresas</a></li>
+                <li><a href="{{ route('enterprise.index') }}">Ver Empresas</a></li>
+                <li><a href="{{ route('institution.create') }}">Cadastrar Instituições</a></li>
+                <li><a href="{{ route('receipt.create') }}">Cadastrar Nota Fiscal</a></li>
+                <li><a href="{{ route('donation.create') }}">Fazer Doação</a></li>
                 </ul>
             </div>
 

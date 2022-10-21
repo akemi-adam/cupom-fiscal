@@ -17,4 +17,9 @@ class Product extends Model
     ];
 
     public $timestamps = false;
+
+    public function receipts()
+    {
+        return $this->belongsToMany(Receipt::class);
+    }
 }
